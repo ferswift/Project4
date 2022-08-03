@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cake,bolo,dene,doce,salvador,bahia">
+    <meta name="description" content="Bolos de todos os tamanhos feitos em salvador por dene uzeda">
+    <link rel="stylesheet" href="style.css">
+    <title>Doce Dene</title>
+</head>
+<body>
+   <section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="img/logodene.png" class="logo" alt="Logotipo Dene"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Novidades</a></li>
+            
+        </ul>
+    </header>
+    <div class="content">
+        <div class="TextBox">
+        <h2>O Melhor Bolo Caseiro de Salvador. <br> <span> Amor,Carinho e Muuuuito Chocolate ;)</span></h2>
+        <p>Feito de diversos tamanhos e tipos, estou no ramo há muitos anos e já fiz dezenas de pessoas felizes! Venha ser feliz também com o maravilhoso bolo da Dene!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam optio, numquam obcaecati officiis sit expedita libero consequatur labore debitis ipsam eaque accusantium blanditiis fuga minus assumenda asperiores. Sit, iusto temporibus?
+        </p>
+        <a href="#">Saiba mais</a>
+        </div>
+        <div class="imgBox">
+         <img src="img/bolo11.png" class="bolo1" alt="Bolo dene 1">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="img/bolo11.png" onclick="imgSlider('img/bolo11.png');changeCircleColor('#eb7942')" alt="bolo11"></li>
+        <li><img src="img/bolo22.png" onclick="imgSlider('img/bolo22.png');changeCircleColor('#eb7495')" alt="bolo22"></li>
+        <li><img src="img/bolo33.png" onclick="imgSlider('img/bolo33.png');changeCircleColor('#fff')   " alt="bolo33"></li>
+    </ul>
+    <ul class="social">
+        <li><a href="#"><img src="img/facebook.png" target="blank" alt="face logo"></a></li>
+        <li><a href="https://www.instagram.com/docedene/?hl=pt-br" target="blank"><img src="img/instagram.png" alt="insta logo"></a></li>
+        <li><a href="#"><img src="img/twitter.png"  target="blank" alt="twitter logo"></a></li>
+    </ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.bolo1').src = anything;
+    }
+
+    function changeCircleColor(Color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+</script>
+    
+</body>
+</html>
